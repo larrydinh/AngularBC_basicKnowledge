@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
     <input value="{{name}}"/>
     <input [value]="name"/>
     <img [src]="imgSrc"/>
-    <img src ="{{imgSrc}}"/>
+    <img src ={{imgSrc}}/>
     <!-- <button class="btn btn-success" (click)="changeName()"></button> -->
     <br/>
     <input #tInput/>

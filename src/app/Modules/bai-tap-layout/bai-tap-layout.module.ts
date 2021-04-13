@@ -9,7 +9,7 @@ import { HeaderComponent } from 'src/app/bai-tap-layout/header/header.component'
 
 
 @NgModule({
-  declarations: [    
+  declarations: [
     BaiTapLayoutComponent,
     HeaderComponent,
     FooterComponent,
@@ -18,6 +18,7 @@ import { HeaderComponent } from 'src/app/bai-tap-layout/header/header.component'
   imports: [
     CommonModule
   ],
-  exports:[BaiTapLayoutComponent] //xuất component ra để khi import module này vào module khác thì component này có thể sử dụng trong module khác
+  exports:[BaiTapLayoutComponent]
+  // xuất component ra để khi import module này vào module khác thì component này có thể sử dụng trong module khác
 })
 export class BaiTapLayoutModule { }
