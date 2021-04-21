@@ -36,6 +36,6 @@ export class MovieItemComponent implements OnInit {
      this.onSelect.emit(this.movie);
   }
   deleteMovie(){
-    this.onDelete.emit(this.movie.id)
+    this.onDelete.emit(this.movie.id);
   }
 }

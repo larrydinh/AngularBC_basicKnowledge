@@ -5,5 +5,29 @@
   <!-- <app-two-way-binding></app-two-way-binding> -->
   <!-- <app-structural-directives></app-structural-directives> -->
   <!-- <app-attribute-directives></app-attribute-directives> -->
-  <app-interaction></app-interaction>
+  <!-- <app-interaction></app-interaction> -->
+  <app-danh-sach-san-pham #tagDSSP></app-danh-sach-san-pham>
+
+  <div className="container">
+    <div className="form-group">
+      <p>Ma SP</p>
+      <input #maSP type="text" class="form-control" />
+    </div>
+    <div className="form-group">
+      <p>Ten SP</p>
+      <input #tenSP type="text" class="form-control" />
+    </div>
+  </div>
+  <div className="form-group">
+    <p>Gia</p>
+    <input #gia type="text" class="form-control" />
+  </div>
+  <button
+    id="btnThemSanPham"
+    #btnThemSanPham
+    class="btn btn-success mt-3"
+    (click)="themSanPham({maSP:maSP.value, tenSP:tenSP.value,gia:gia.value})"
+  >
+    Them San Pham
+  </button>
 </div>
